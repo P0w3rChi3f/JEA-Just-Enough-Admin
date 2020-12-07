@@ -1,0 +1,13 @@
+JeaDemo.local
+
+Domain Admin: administrator  PassWord: Password10#$
+
+JEA-DC - 192.168.121.137
+Windows Server 2016
+
+Jea-DemoSVR - 192.168.121.138
+Windows Server 2016
+
+JEAClient - 192.168.121.131
+Windows 10 Client
+JEAUser - Password12#$
