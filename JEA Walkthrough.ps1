@@ -40,7 +40,7 @@ Copy-Item -Path 'C:\JEAConfigs\JEA-DemoFiles\RoleCapabilities\Developer.psrc' -D
 Copy-Item -Path 'C:\JEAConfigs\JEA-DemoFiles\RoleCapabilities\Contractors.psrc' -Destination 'C:\JEAConfigs\Modules\BsidesJEA\RoleCapabilities\Contractors.psrc' -Force
 
 Enter-PSSession -ComputerName JEA-DemoSVR -Credential jeademo\jea.Admin
-cd 'C:\Program Files\WindowsPowerShell\Modules\'
+Set-Location 'C:\Program Files\WindowsPowerShell\Modules\'
 Exit-PSSession
 
 $DemoSVRSession = New-PSSession -ComputerName Jea-DemoSVR -Credential 'jeademo\jea.admin'
@@ -50,7 +50,7 @@ Copy-Item -Path 'C:\JEAConfigs\Modules\BSidesJEA' -Destination 'c:\Program Files
 #Register the EndPoint - 
 
 Enter-PSSession -ComputerName JEA-DemoSVR -Credential jeademo\jea.Admin
-cd 'C:\Program Files\WindowsPowerShell\Modules\'
+Set-Location 'C:\Program Files\WindowsPowerShell\Modules\'
 Get-PSSessionConfiguration | Select-Object name
 Exit-PSSession
 
