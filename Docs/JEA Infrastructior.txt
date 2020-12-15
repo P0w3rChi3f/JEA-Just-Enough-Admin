@@ -1,6 +1,6 @@
 JeaDemo.local
 
-Domain Admin: administrator  PassWord: Password10#$
+Domain Admin: administrator  PassWord: Password12#$
 
 JEA-DC - 192.168.121.137
 Windows Server 2016
