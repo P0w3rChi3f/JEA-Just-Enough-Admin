@@ -26,6 +26,12 @@ install-addsforest -Domainname
 Add-Computer -DomainName jeademo.local
 
 # Create OU structure
+$OUs = "Demo-Users", "Demo-Groups", "Demo-Computers"
+New-ADOrganizationalUnit -Name Demo
+
+foreach ($OU in $OUs) {
+    New-ADOrganizationalUnit -name $ou -path "ou=Demo,dc=demo,dc=com"
+}
 # DemoLab
     # Users
     # Groups
